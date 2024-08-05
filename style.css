@@ -1,0 +1,422 @@
+:root {
+   --cor-primaria: #4c8cc9;
+   --cor-segundaria:#88765f;
+   --cor-tres:#9EAC71;
+   --branco:WHITE;
+   --preto: black;
+}
+
+
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-image: url(../imgs/library.jpg);
+}
+
+header {
+   background-color: var(--cor-tres);
+   display: flex;
+   padding: 1rem;
+   position: fixed;
+   z-index: 1000;
+   width: 100%;
+   
+   justify-content: center;
+}
+
+
+.cor1 {
+   
+}
+
+.cor1 a {
+   position: relative;
+   display: flex;
+   align-items: center;
+   color: white;
+
+
+}
+
+#forma-buscar {
+   flex-grow: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative
+}
+
+#buscar {
+   flex-grow: 0.75;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   padding: 0.5rem;
+
+}
+
+#bt-buscar {
+   background-color: transparent;
+   border: none;
+   position: absolute;
+   right: 11%;
+   cursor: pointer;
+}
+
+.icon-link {
+   display: flex;
+ 
+   align-items: center;
+   margin: 0 0.5rem;
+   color: white;
+   margin-right: 30px;
+}
+
+.esp {
+
+   height: 160px;
+   
+   
+}
+
+.banner{
+   width: 100%;
+   background-image: url(../Testespi/imgs/livro41.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   height: 450px;
+}
+.bar {
+   background-color: var(--cor-tres);
+   width: 100%;
+   height: 20px;
+
+}
+
+
+a {
+   text-decoration: none;
+}
+
+.menu-lt a:hover {
+   background-color: var(--cor-tres);
+}
+
+.menu-h {
+   display: flex;
+   position: fixed;
+   z-index: 1000;
+   width: 100%;
+   background-color:var(--cor-segundaria);
+   justify-content: center;
+   margin-top: 110px;
+   height: 46px;
+}
+.categoria a{
+   display: flex;
+   
+   
+}
+.menu-fixo {
+   display: flex;
+   position: fixed;
+   z-index: 1000;
+   width: 100%;
+   
+   justify-content: center;
+}
+
+
+.icon-menu {
+   display: flex;
+ 
+   align-items: center;
+   margin: 0 0.5rem;
+   color: white;
+   margin-right: 30px;
+}
+.menu-nv {
+   display: grid;
+   color: white;
+   grid-template-columns: repeat(4, 1fr);
+   text-align: center;
+   gap: 0rem 3rem;
+}
+
+.menu-nv a {
+   height: 45px;
+   color: white;
+   
+   
+}
+
+.menu-nv a:hover {
+   background-color: #9EAC71;
+}
+
+
+
+
+.drop-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
+.drop-content a {
+   color: black;
+   
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   text-align: left;
+   padding: 9px 20px;
+}
+.titulo{
+   margin-left: 5rem;
+}
+.drop-content a:hover {
+   background-color: #f1f1f1;
+}
+
+
+.categoria:hover .drop-content {
+   display: block;
+}
+
+
+.card {
+   background-color: rgb(255, 255, 255);
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 4px;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+.card:hover {
+   box-shadow: 1px 4px 8px 1px rgba(209, 137, 30, 0.486);
+}
+
+.card-container {
+  
+   display: grid;
+   grid-template-columns: repeat(6, 8fr);
+   
+   gap: 4rem 2rem;
+   align-items: center;
+   position: relative;
+
+   margin: 3rem;
+   color: black;
+   text-decoration: none;
+}
+.menu{
+   margin-left: 10%;
+   margin-right: 10%;
+}
+.card-content {
+   font-size: 15px;
+}
+.card-content p {
+   text-align: center;
+   color: rgb(0, 0, 0);
+}
+
+.card-img {
+   
+   display: flex;
+   justify-content: center;
+   padding-top: 7px;
+}
+
+.card-img img {
+   height: 163px;
+   width: 119px;
+   transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+.card-img:hover {
+   transform: scale(1.5);
+}
+
+.idd {
+   text-align: center;
+   color: black;
+   padding: 1rem;
+   font-weight: 700;
+ 
+   font-size: 14px;
+   overflow: hidden;
+}
+#autor{
+   font-size: 10px;
+   color: gray;
+}
+#titulo{
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 1;
+   -webkit-box-orient: vertical;
+   
+   text-overflow: ellipsis;
+}
+#genero{
+   font-size: 14px;
+}
+
+.bt-trocar {
+   display: flex;
+   
+   position: relative;
+   justify-content: center;
+   padding-top: 1rem;
+}
+
+.icon-fav {
+
+   color: black;
+}
+
+.bt {
+   border: none;
+
+   text-decoration: none;
+   cursor: pointer;
+   border-radius: 0px;
+   background-color: var(--cor-segundaria);
+   padding: 15px 32px;
+   font-size: 16px;
+   color: white;
+
+}
+
+.bt:hover {
+   background-color: #555;
+}
+
+.data {
+   text-align: center;
+   text-decoration: none;
+   color: black;
+   padding: 1rem;
+}
+
+
+
+.carousel-container {
+   position: relative;
+   width: 100%;
+
+   margin: 0 auto;
+   overflow: hidden;
+}
+
+.carousel {
+   display: flex;
+   transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+   flex: 0 0 100%;
+   max-width: 100%;
+   display: none;
+}
+
+.carousel-slide.active {
+   display: block;
+}
+
+.cad {
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   text-align: center;
+}
+
+.cad img {
+   max-width: 100%;
+   height: auto;
+   margin-bottom: 10px;
+}
+
+.cad-txt {
+   margin-top: 10px;
+}
+
+
+#prevBtn,
+#nextBtn {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   padding: 10px;
+   background-color: rgba(0, 0, 0, 0.5);
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   z-index: 2;
+}
+
+#prevBtn {
+   left: 10px;
+}
+
+#nextBtn {
+   right: 10px;
+}
+
+.sec-menu {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 9rem;
+}
+
+.page {
+   text-align: center;
+
+
+}
+
+.page-nu {
+   display: inline-block;
+}
+
+
+
+.page-bt {
+   border: none;
+   padding: 10px;
+
+   cursor: pointer;
+   border-radius: 50%;
+   background-color: var(--cor-segundaria);
+
+   width: 40px;
+   height: 40px;
+   color: white;
+
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background-color: var(--cor-tres);
+   color: white;
+   height: 50px;
+
+}
+
+
+@media only screen and (max-whidth: 700px) {}
